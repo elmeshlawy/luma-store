@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="description" content="Luma — considered objects for everyday living. Discover independent fashion, accessories and home finds.">
+  <title>Luma — Objects for everyday living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="products.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">A little something for your first order — take 10% off with <strong>HELLOLUMA</strong></div>
+  <header class="site-header">
+    <button class="icon-button menu-toggle" aria-label="Open navigation" aria-expanded="false"><span class="menu-lines"></span></button>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#/shop">Shop</a><a href="#/shop?category=Accessories">Accessories</a><a href="#/shop?category=Home">Home</a><a href="#/about">Our story</a></nav>
+    <a class="wordmark" href="#/" aria-label="Luma home">luma<span>®</span></a>
+    <div class="header-actions"><button class="icon-button search-toggle" aria-label="Open search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 4.5 4.5"/></svg></button><a class="icon-button wishlist-link" href="#/wishlist" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.2-8.8 10.1-8.8 10.1S3.2 13.9 3.2 8.7a4.6 4.6 0 0 1 8.8-1.9 4.6 4.6 0 0 1 8.8 1.9Z"/></svg><span class="count-badge wishlist-count">0</span></a><a class="icon-button cart-link" href="#/cart" aria-label="Shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="count-badge cart-count">0</span></a></div>
+  </header>
+  <div class="mobile-nav" aria-label="Mobile navigation"><a href="#/shop">Shop all</a><a href="#/shop?category=Accessories">Accessories</a><a href="#/shop?category=Home">Home</a><a href="#/about">Our story</a></div>
+  <form class="search-bar" role="search"><label class="sr-only" for="site-search">Search products</label><input id="site-search" type="search" placeholder="Search the good things…"><button class="text-button" type="submit">Search</button><button class="icon-button search-close" type="button" aria-label="Close search">×</button></form>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><div class="footer-top"><div><a class="wordmark footer-wordmark" href="#/">luma<span>®</span></a><p>Objects for everyday living.<br>Chosen with care, kept for a while.</p></div><div><h2>Come on in</h2><a href="#/shop">Shop all</a><a href="#/about">Our story</a><a href="#/wishlist">Your wishlist</a></div><div><h2>Need a hand?</h2><a href="mailto:hello@lumastore.example">Get in touch</a><a href="#/about#shipping">Shipping & returns</a><a href="#/about#faq">FAQs</a></div><form class="newsletter-form"><label for="newsletter-email">A good note, now and then.</label><p>New things, thoughtful ideas, and 10% off your first order.</p><div class="newsletter-field"><input id="newsletter-email" type="email" placeholder="Your email address" required><button aria-label="Subscribe">→</button></div><span class="form-feedback" aria-live="polite"></span></form></div><div class="footer-bottom"><span>© <span id="year"></span> Luma Store</span><span>Made for the everyday.</span><a href="#/">Instagram ↗</a></div></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <dialog class="quick-dialog" aria-label="Product quick view"></dialog>
+</body>
+</html>
